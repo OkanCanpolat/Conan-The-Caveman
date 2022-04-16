@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="600" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="138">
+ <properties>
+  <property name="black" value="assets/black.png"/>
+  <property name="clouds" value="assets/prehistoric.png"/>
+  <property name="decorations" value="assets/fountain.png"/>
+  <property name="player" value="assets/player.png"/>
+  <property name="snail" value="assets/snail.png"/>
+  <property name="spikes" value="assets/spikes.png"/>
+  <property name="teleport" value="assets/teleport.png"/>
+ </properties>
+ <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198" columns="18">
+  <image source="blocks1.png" width="614" height="376"/>
+ </tileset>
+ <tileset firstgid="199" name="blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198" columns="18">
+  <image source="blocks2.png" width="614" height="376"/>
+ </tileset>
+ <tileset firstgid="397" name="blocks3" tilewidth="32" tileheight="32" tilecount="96" columns="12" spacing="0" margin="0">
+  <image source="blocks3.png" width="384" height="256"/>
+ </tileset>
+ <objectgroup id="1" name="Object Layer 2">
+  <object id="1" name="Background" type="ScrollingBackground" x="0" y="0" width="32" height="32">
+   <properties>
+    <property name="animSpeed" value="0.2"/>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="480"/>
+    <property name="textureID" value="clouds"/>
+    <property name="textureWidth" value="640"/>
+   </properties>
+  </object>
+  <object id="125" name="BackGround" type="background" x="0" y="0" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="480"/>
+    <property name="textureID" value="black"/>
+    <property name="textureWidth" value="640"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Bottom" width="600" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztnFuu0zAQhqnEGtgSj/AKW2AdXPfHM7AEYAMEoeqEKo7H9tzsfJ80Omnc2jO24/9XVZ1nzwBAypvbU5y1A8A/vt6IVQMAQIuV/NXnLc8vk+QK8xLtAQj8FQDkZyV/9X7L88MWH7f4NEnOYIeV1kZ7AMIuAAC0WNFf3f+CD1K90tAxqS5aam20ByDsAgBAi5X8FfjTolejOqY9Tq/WRnsAwi4AALS4+6e3hbMFfwUlWvVqRMek47SM0au10R6AsAu4Jq+2tX/N+oMyfH8FPZzpUuv91rG0dLK3j2gPQIyH9d6CueA3u2DBu9tTHPHyhr+C/6npTamtR6Nq+jaif706Gu0NJLlG55M1NOYJ1oPf7IIFNX/F91ewR6I1WhrVo48jtUj7ivYIXn4gOm+POfCcT+jj2xbft/jR2b5KDjAfd2/F76+ghqZmtY5V+syI5nlqspVfyOY9skXrHogkSx7Z+LnFry1+d7avkgPMB99fgYQWHRrVvR4P0MMKvkMjnxnq1KqpViPk5HllbWrtq+QAc7Gyvxo9e6+GlnaV3tur6ZKxeljFd4zmNEudGnuzViPk5EVlbWrtq+QAc4G/youn3mj2V3p/rZ+e8UbW9Eq+46i2lersRasfAIBH8Fc58dQdaw07GkeSQ0ufo/m0jB/tJby9SXR+XntSoz8AgDt/fdWq///K6ky2xEp/SrV76djjWLUcWvsczaclh2hP4eVPonOz3o9HNQIAaLHy/xe1Ppu1sdSho9q95+Usr948LPVW8p5oj2HpU6Lr83h2vZ8BALgO+Kt4PPSo9NpzTiz009InaPeX3WtkrdOy1uizIdt8AIAe+KtYonXLcz4s8pB8VnteotfKa92i92VEjd5knRcAGOeK/iqLJkRrl/c5bZGH5PPacxO9Vl5rd4V9Gfk8HI2fbX4AoB/81VrRUnvkemj3KR1XQ8Mi11VaswbRdXpQG986t1nmCQDawV/NH/t6S7U/3o/AQh8k/WmP27tGrWtZ03xrIvawN7U8rHOcbb4AQA7+as7Y11i6znYOW+iDpL/otbrnd7aGkntn9y3w3MdR1PKJ3jdZ5w0A6lzRX0XTcqaX2vavS9cZat1jsQaS/iI18Oj6aA0l987uW3AFb9DyLGYKAMgP/io+r7P2Utv+dek6Q617LNZA0p+37tWuj9ZQ6qMy7eMVwF8BgBX4q/i8ztpLbfvXpesMte6J8lcW7D3TYx49/uqof/yVPdnOhuz8ATT3uHI=
+  </data>
+ </layer>
+ <layer id="3" name="Collision" width="600" height="25">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztnV2OG0UQxz3X4ECcAYmPW3AJJEgktFkI8ADZDShBspNYIizBK8EL5oU88MIZIHfAo91WyrX/+uieGk973CWVZsbT4+6uaU//XF3ds1g0adKkiSzbbrG433T2ur5VfrwWzqF9rn92U7feeNlm1P8UbHFqdW7SpEmTKNkafQnqk7XzU7DDcqcrsrXSvyBKP/Nel/ZR3XkZUJm85bS+j9db+97Hhbq+3XI7zLV/5Uzh4c71zG2xZO1vOeP736RJkyZRMpb/aghrLZlydpD2tbJY7GjxFOUK7TqNVWhZ6eeclejxqstnJppPX9YfAvrBbXeXQefYvyb/VW77nasttN/LHOvcpEmTJlFi8ZXUz4zhq+KMIZ1bgc8l1lqTreZ74wzF9yXeoscWxyRb836J3wOJGennWl7bjDJ5Zdvdtckc+1fEFNpvYH0CtpDqP8c658hPiv48YbmaNGkyrrxc7P/eJZGeobn8xON4PNfn+KSWyueIRax6cDbS0nnq7uEYja+0+vNjL8fxdGe74wc7Pb/dJv0io+xz71+1/xunGItG2yDfn2Odc+RfRX+dsFxNmtQu7++eHR8c4fOjZ6merX651audXivppTGAQ8RZaT4pND5o8ZXEWp7xnnQe+azSVrKJ10eUOMryX2n18uR1CdKdDWSDU+GrvzpfXBpvA3O0xaVhgyjf6LFK46smTU5DXi72uSppz1ZXynWR8Ve53JXjk/KMD3rLKPEWj1+XfFfWmGDyE3G/kDU+aNWltD+jbIV8jDl8NffxQa/weSHHbIsz0Fab2KLxlfbMbdKkyb68W/nzh3PVZpHHV0PHB0s0h5m0sURr/pwUg4WOEVMhn540JnhGysH73OQP4NdpjJu+S2IrieXoeY01c/iKx57VyhTf7sr13a0+GqmM/HdTqy00SW3nWMs/tTS+anJq8smtUvnY0F7eO9LnS4qvojxFt1eLYf4rjbNKz3mZycNOXpXWeNLKiXxY2pggZxlvn2XdA42ttLwQW6H6ntL4IGUvpOdA/wb15PY4JltQrjrG8kfKqwH1nhtf8Rj9Jqcj94zzD4Lzqz3+Kv0G+t8xZau0P9b4oMVUOX6vIWN91rpElj9OisWX5g96xgQpG64y+qxtd3esdKnkRfND/SPvPy1bHbv/qmemKD8V8ueieh6j/wpxlcXnDwz9TNDP2fG9W6XCr6GSOHgs/2OSbwZ8/xz4ivLUFdMmWDh/avNIp5RHAWnOIwpyRJLuW+KmtJXGB3Pi2w+5FkMp02lx9l7m0mKwkubE9EpjcEP4KoeteF58PqJk05L4q5L6HUqegD46t3/m67drfGUxWC3CuQq1DY0hNX3I9CtFv+7ufn+6zmu/aO46Rb7SmKrXN4u6yz+VcJslQTZMSm394a6tfdTJ22guu3SkeQw+s3xZY0vv25rKv3W9uMtWyW+VznHOKvFfeX1RY7AX8iuVrj+O5nxJjJU7H7AXyjqp35K4xYp7p6qxldU/etZwymWDY+CrXjhjec8lQeuLetijRltI/io05i7Vkbc1bc24Z+z4uWHHrXIuRz7t9v1kOddcdLIPztJj5SuNB47ZfyX5laK+V7JPlD0Rl+UK9UddONJ6GKwW0fyEUZrsn9gq8RNnKuq/yuGrknWvornKyxq54vHVlbIVqofUn2jzB5dKGbxrLNB+0cPJufMH5/B+HMpaT5jt+L3U/Fc1jg9q44CUr6w2oP334uzOP3tOjqX2QsdYh9jvy+6G7Xof2W+dj41+727YaohqfNWrZ9xozL6Cr4HI+5D/FncZYLPAfcZYZfHYxlsGXu5Uv6g+V/JN0c/e6W50KF8h/5dHKS9xduJjgZcgTc3i5dhcvWb7G5CG+6/o1stXkj/Hc2xdi57R1nhk9Bo7qU+k/qw0Z/BFZl6cdaS60FgVqS9LPKTxHfKTSf4H1C9qcyePPf4qUqT/G3xMqkb/lcRV1B8szSmxxkClObR8/4WwRQwV5b/qv+dZ95axqPLxyxxF30OPtWc2j9eg+g8pu5bOqzzmNkdRuREPoLSl+sY4n2Son2is/rhULYnIg/IS91/x41Pgq2umV2DL9ylTpXM0xj2xlfRfhMpY7x/MUcQmY6xduO3ucsjQMUGpLtp7E6V+psRvhfon7R16pzZ/0DMmmITOUVgZ9aS+l6nXv9K4yjtnxFNHbY6IR1G7j/D/0bb5LKM8VB8WXBPR107d53t5YIp8S21Vq20tichD81+hYxR/VatE2EdjLJRu6L31jA96fFElHIX8KWOuC434SuIaPnfqnGytelp9GloXy2Ira50Kia+43+F7Qfk6BTx+mLaTGscHh8yzTyL916g1/gpxlfbuSq0NafFXaL0U7/OCtz/kz43gK14Oylmed1xxfbrTH8ExzSeSIWpUKlPkW2qrWm1rSUQeja/2lfutEDehNCjtBuyXxreXqBVHzZ+3/NzY79vgHCNxzZlQdtRnef7De/whSDx+K42vPJzgFT4+WBtfbTt7LQFLpXte2/oMiKtSO9T4h/LRiu1rdaTXSb9fNH4oPSMQg0XxVU6MAk3Decp6fjW+Gj/fUlvValtLIvLI4avHi3nzlcZV6JjHXUk8dgXSSmK9Yyxqzp71rKvlXWY8zinneU37NpQ2Z10sOk/Q8w4hj/8qagymFr56Bers5VGrz6XsXAtfUa7ivOPhAc2vmht/hdqXN1bLm79X0r3Qfntrlmal2IJfJ9UjkiFqVCpT5Ftqq1pta0lEHhpfcZY6Bb6SYq2QStcnRXHv3ns7lnj4rTa2yv0P7GUub1/C/Vaed1ijcU/eN0T4r2jc8tQxR1JM/9Kwn9SP5vT9iOc039iQ9/t55wPy8ljj1J74dslW6Ltz/Nd8P5r9k0r197BVr5Jfq/HV+PmW2qpW21oSkUfjq331+K64boRr+fGGHJ+i5Ly3VltrAcX3avHjyGdAn+fSulgoLsWr1vpXY/RhU/HVmVJnOr/AYijEYZZt0/qWuX7ckv8QFldpfIXGASkbeWP4e45OjEFZY93hti0xlbReSFTbTGXgWy9TWeP86FwkQ9SoVKbIt9RWtdrWkog8cvjqAnxWs+TaQuIqjbc2RL3jip57OxehTMXj2VGadCw9S6PGnGifJ63PsGLppPdY3+/yxgfROJf1Hj6uKCb+dWGf6I1FR3xM79VrUGdv32jdI4mvDiFovXXLR4UYx/N/wOIrmmbMOAI0x8K7Tjtf78267xJneWLHnpJ0kQxRo1KZIt9SW9VqW0si8mh89VZRzLr0uZQGpU+fn4r/SmIqzle83zrvyv1FpX016ssi5hhI/quoMZhI+QOUA7EU4mPPGq287pIvaw3ORc8LyBHLXyXFO90ndaGsJcVecX5fCXVMNn1aUdtBgn4/K7YvMZWkyVdH/XXrbn+sMJIhalQqU+RbaqtabWtJRB458e0X4LOaZYhdJF+UJxZLW8vB4qv+mX4+gaKYFD5Opp2n5ySmktZjKFHPPMESFhpaLouvpuAEJNRnhfhKYilpzSTLByipNAaI0qXvKrGbd2yatmnOeFKb88ZbWXxltY3epokzaucr5Mdbsa3n95zzG49kiBqVyhT5ltqqVttaEpFH7voMc+YrazwQ8RRag4F/x2axH6Ol3VvP3Oa0j9aRQes0o36CPtPWHY6P5n2kdz3CQ/BVpB7af3XIOW5UJKby8BWKsUrppM+ttZmQP4u3UYm/ctd6WDuv42WgnLBi5UrH2pzANfseqf4rtq/FX03RdnJkK9gJ3Udkq9L/TpEMUaNSmSLfUlvValtLIvJofDWO0jmEyI8lCY8L9ihnKvQM18Yx0lbjDOt84ysfXw3lBI/28opte5GYyuIrGmOVOz4YqRqvWXPl0H+W3N9Zjg79Xst/9XykthOh6F4dwrb/A+spCYk=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Object Layer 1">
+  <object id="118" name="Fountain" type="decorations" x="19072.6" y="281.001" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="72"/>
+    <property name="textureID" value="decorations"/>
+    <property name="textureWidth" type="int" value="72"/>
+   </properties>
+  </object>
+  <object id="2" name="Player" type="Player" x="324" y="232" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="3"/>
+    <property name="textureHeight" value="60"/>
+    <property name="textureID" value="player"/>
+    <property name="textureWidth" value="40"/>
+   </properties>
+  </object>
+  <object id="3" name="Snail" type="snail" x="715.333" y="292.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="4" name="Snail" type="snail" x="1753" y="234" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="5" name="Snail" type="snail" x="2203" y="251" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="6" name="Snail" type="snail" x="3099" y="351" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="7" name="Snail" type="snail" x="4116" y="372" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="8" name="Snail" type="snail" x="4767" y="306" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="9" name="Snail" type="snail" x="5078" y="354" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="10" name="Snail" type="snail" x="7446" y="282" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="11" name="Snail" type="snail" x="7624" y="280" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="12" name="Snail" type="snail" x="8820" y="632" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="13" name="Snail" type="snail" x="10746" y="422" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="14" name="Snail" type="snail" x="11106" y="204" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="15" name="Snail" type="snail" x="11330" y="364" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="16" name="Snail" type="snail" x="12956" y="701.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="17" name="Snail" type="snail" x="14441.3" y="136.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="18" name="Snail" type="snail" x="14522" y="118" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="19" name="Snail" type="snail" x="14524" y="24.6667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="20" name="Snail" type="snail" x="14524" y="68" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="21" name="Snail" type="snail" x="14431.3" y="231.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="22" name="Snail" type="snail" x="14540.7" y="178.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="23" name="Snail" type="snail" x="14428.7" y="64.6667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="24" name="Snail" type="snail" x="14481.3" y="28" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="25" name="Snail" type="snail" x="14497.3" y="101.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="26" name="Snail" type="snail" x="14522" y="154" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="27" name="Snail" type="snail" x="14476.7" y="196" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="28" name="Snail" type="snail" x="14580.7" y="181.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="29" name="Snail" type="snail" x="14588" y="122" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="30" name="Snail" type="snail" x="14620.7" y="72.6667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="31" name="Snail" type="snail" x="14610.7" y="191.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="32" name="Snail" type="snail" x="14586" y="40" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="33" name="Snail" type="snail" x="15442.7" y="667.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="34" name="Snail" type="snail" x="15258.7" y="528" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="35" name="Snail" type="snail" x="15328" y="521.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="36" name="Snail" type="snail" x="15392" y="524" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="37" name="Snail" type="snail" x="15446.7" y="518.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="38" name="Snail" type="snail" x="16608" y="174.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="39" name="Snail" type="snail" x="16517.4" y="214.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="40" name="Snail" type="snail" x="16295.9" y="329.334" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="41" name="Snail" type="snail" x="16216" y="371.999" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="42" name="Snail" type="snail" x="16145.3" y="416" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="43" name="Snail" type="snail" x="16046.6" y="449.334" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="44" name="Snail" type="snail" x="15866.7" y="541.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="45" name="Snail" type="snail" x="16434.7" y="250.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="46" name="Snail" type="snail" x="16690.7" y="129.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="47" name="Snail" type="snail" x="15957.3" y="490.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="48" name="Snail" type="snail" x="17597.2" y="394.303" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="50" name="Snail" type="snail" x="18503.2" y="162" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="51" name="Snail" type="snail" x="18408" y="231.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="52" name="Snail" type="snail" x="18486.5" y="231.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="53" name="Snail" type="snail" x="18491.5" y="270.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="54" name="Snail" type="snail" x="18514.5" y="322.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="55" name="Snail" type="snail" x="18529" y="229.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="56" name="Snail" type="snail" x="18589.5" y="321" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="57" name="Snail" type="snail" x="18590.5" y="271.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="58" name="Snail" type="snail" x="18456.5" y="132.167" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="59" name="Snail" type="snail" x="18453.8" y="191" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="60" name="Snail" type="snail" x="18406.5" y="273.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="61" name="Snail" type="snail" x="18404.5" y="321.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="62" name="Snail" type="snail" x="18449.5" y="272" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="63" name="Snail" type="snail" x="18479" y="322.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="64" name="Snail" type="snail" x="18443" y="320.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="65" name="Snail" type="snail" x="18552.5" y="322" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="66" name="Snail" type="snail" x="18536" y="271.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="67" name="Snail" type="snail" x="18571.5" y="230.5" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="68" name="Snail" type="snail" x="18564.7" y="168" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="69" name="Snail" type="snail" x="18646.7" y="151.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="70" name="Snail" type="snail" x="18604" y="138" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="71" name="Snail" type="snail" x="18604.3" y="190" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="72" name="Snail" type="snail" x="18470" y="27.6667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="73" name="Snail" type="snail" x="18639" y="98.6667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="74" name="Snail" type="snail" x="18506.3" y="73" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="75" name="Snail" type="snail" x="18542.7" y="32.3333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="76" name="Snail" type="snail" x="18595.7" y="52.3333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="77" name="Snail" type="snail" x="18551.3" y="96" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="78" name="Snail" type="snail" x="18643" y="214" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="79" name="Snail" type="snail" x="18638" y="279" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="83" name="Teleport" type="teleport" x="17002" y="665" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="128"/>
+    <property name="textureID" value="teleport"/>
+    <property name="textureWidth" type="int" value="128"/>
+   </properties>
+  </object>
+  <object id="84" name="Snail" type="snail" x="17805" y="587.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="85" name="Snail" type="snail" x="17921.6" y="588.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="86" name="Snail" type="snail" x="17854.3" y="587.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="87" name="Snail" type="snail" x="17807.3" y="588.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="88" name="Snail" type="snail" x="17831.3" y="588.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="89" name="Snail" type="snail" x="17848.6" y="588.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="90" name="Snail" type="snail" x="17878" y="588.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="91" name="Snail" type="snail" x="17822.3" y="591" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="92" name="Snail" type="snail" x="17874.6" y="598" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="93" name="Snail" type="snail" x="17851.3" y="589" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="94" name="Snail" type="snail" x="17866" y="587.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="95" name="Snail" type="snail" x="17892.6" y="587.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="96" name="Snail" type="snail" x="17921" y="598.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="97" name="Snail" type="snail" x="17802" y="593.666" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="98" name="Snail" type="snail" x="17853" y="595" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="99" name="Snail" type="snail" x="17809" y="555.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="100" name="Snail" type="snail" x="17905" y="547" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="101" name="Snail" type="snail" x="17800.6" y="552.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="102" name="Snail" type="snail" x="17851.3" y="552.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="103" name="Snail" type="snail" x="17802" y="553" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="104" name="Snail" type="snail" x="17930" y="586.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="105" name="Snail" type="snail" x="17800.7" y="577" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="106" name="Snail" type="snail" x="17889.6" y="559.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="107" name="Snail" type="snail" x="17906.6" y="585.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="108" name="Snail" type="snail" x="17899" y="593.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="109" name="Snail" type="snail" x="17917.6" y="563.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="110" name="Snail" type="snail" x="17835.6" y="551.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="111" name="Snail" type="snail" x="17798" y="552.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="112" name="Snail" type="snail" x="17854" y="542.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="113" name="Snail" type="snail" x="17871.3" y="541" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="114" name="Snail" type="snail" x="17875.3" y="553.667" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="115" name="Snail" type="snail" x="17920" y="588.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="116" name="Snail" type="snail" x="17920.6" y="565.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="117" name="Snail" type="snail" x="17857" y="587.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="121" name="Spikes" type="spikes" x="14926" y="360" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="122" name="Spikes" type="spikes" x="14961.3" y="360" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="123" name="Spikes" type="spikes" x="15028.9" y="553" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="124" name="Spikes" type="spikes" x="14995.7" y="553" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="126" name="Spikes" type="spikes" x="12626" y="425" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="127" name="Spikes" type="spikes" x="12686" y="425" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="128" name="Spikes" type="spikes" x="12656" y="425" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="129" name="Spikes" type="spikes" x="12716.7" y="425" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="130" name="Spikes" type="spikes" x="12750.7" y="425" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="131" name="Spikes" type="spikes" x="12800" y="585" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="132" name="Spikes" type="spikes" x="12730" y="585" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="133" name="Spikes" type="spikes" x="12660" y="585" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="134" name="Spikes" type="spikes" x="12590" y="585" width="32" height="32">
+   <properties>
+    <property name="numFrames" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="64"/>
+    <property name="textureID" value="spikes"/>
+    <property name="textureWidth" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="135" name="Snail" type="snail" x="16362.7" y="281.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="136" name="Snail" type="snail" x="12845.3" y="700" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+  <object id="137" name="Snail" type="snail" x="13052" y="692" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureID" value="snail"/>
+    <property name="textureWidth" value="34"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Overlay" width="600" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt20EOgjAQBdA2MRzBK+st0SMgF6BbcEGoVXB4L/kbZvOTLpgumhIAAAAAAAAAAAAAAAAAAAAAAJ+45ZTuee8WAABx2K/25wyArfqSR8mzch6lAxyVfzvA/xlKXiVj5fxbHYYfdwAAaOmycjdem0fpAABQq8vzXPP7t+U8YgcAAAAAAADOyxsdAIC27FcAAG3ZrwAAAAAAAAAAAAAAAAAAAAAAAIhuAi6JH0s=
+  </data>
+ </layer>
+ <layer id="6" name="Overlay2" width="600" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt3FEKgjAcB+DtrRsErTvVpeqOHaBD9FZRkpiTLG1a3wdjcwr+9h/CngwBAAAAAAAAAAAAAAAAAAAAAAAA+NSxdAAAAAAAYJY2MYRtLJ0CAOB37C5nq73zFQD8nFPpAANaxkebA+crAAAAANoc7v0i3hoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMJxVDCFN/D/gVcb1l3M2a9O3VnOo7Zjq67+Ou67rc31aeuP5towpkyfF537K6t9Kqe8ml6urfl33m/Nd46ntT4rD5yq1zuqd9f7VcTNzW/5crcao4T/L7QntzrabEMo=
+  </data>
+ </layer>
+</map>
